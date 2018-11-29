@@ -1,7 +1,7 @@
 package double_index;
 
 public class SumOfSquare_633 {
-    public boolean judgeSquareSum(int c) {
+    public static boolean judgeSquareSum(int c) {
         if (c < 0) {
             return false;
         }
@@ -18,5 +18,9 @@ public class SumOfSquare_633 {
             }
         }
         return false;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(judgeSquareSum(5));
     }
 }

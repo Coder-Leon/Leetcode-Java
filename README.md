@@ -2,4 +2,6 @@
 
 - Leetcode 167: Two Sum
 
-- Leetcode 633：SumOfSquare
+- Leetcode 633: SumOfSquare
+
+- Leetcode 345: ReverseVowels

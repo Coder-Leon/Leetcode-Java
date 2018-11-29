@@ -1,7 +1,7 @@
 package double_index;
 
 public class TwoSum_167 {
-    public int[] twoSum(int[] num, int target) {
+    public static int[] twoSum(int[] num, int target) {
         if(num == null || num.length < 2){
             return new int[]{};
         }
@@ -17,5 +17,12 @@ public class TwoSum_167 {
             }
         }
         return new int[]{};
+    }
+
+    public static void main(String[] args) {
+        int[] result = twoSum(new int[]{1, 2, 3, 4, 6}, 6);
+        for (int index : result) {
+            System.out.print(index + " ");
+        }
     }
 }

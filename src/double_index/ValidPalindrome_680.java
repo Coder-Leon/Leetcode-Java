@@ -8,20 +8,21 @@ public class ValidPalindrome_680 {
         int i = 0;
         int j = s.length() - 1;
         while (i <= j) {
-            if (i == j) {
-                return true;
+            if (s.charAt(i) != s.charAt(j)) {
+                return isValid(s, i + 1, j) || isValid(s, i, j - 1);
             }
-            if (s.charAt(i) == s.charAt(j)) {
-                i++;
-                j--;
-            } else if (s.charAt(i + 1) == s.charAt(j)) {
-                i += 2;
-                j--;
-            } else if (s.charAt(i) == s.charAt(j - 1)) {
-                i++;
-                j -= 2;
+            i++;
+            j--;
+        }
+        return true;
+    }
+
+    public static boolean isValid(String s, int i, int j) {
+        while (i <= j) {
+            if (s.charAt(i++) != s.charAt(j--)) {
+                return false;
             }
         }
-        return false;
+        return true;
     }
 }

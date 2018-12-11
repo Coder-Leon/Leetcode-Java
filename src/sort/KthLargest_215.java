@@ -69,13 +69,4 @@ public class KthLargest_215 {
         nums[i] = nums[j];
         nums[j] = temp;
     }
-
-
-    public static void main(String[] args) {
-        int[] nums = new int[]{1,2,5,5,1,6};
-        KthLargest_215 getLargest = new KthLargest_215();
-        System.out.println(getLargest.findKthLargest1(nums,3));
-        System.out.println(getLargest.findKthLargest2(nums,3));
-        System.out.println(getLargest.findKthLargest3(nums,3));
-    }
 }

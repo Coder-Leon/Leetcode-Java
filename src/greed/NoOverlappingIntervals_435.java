@@ -5,7 +5,7 @@ import java.util.Comparator;
 
 public class NoOverlappingIntervals_435 {
 
-    public static class Interval {
+    public class Interval {
         int start;
         int end;
 
@@ -20,7 +20,7 @@ public class NoOverlappingIntervals_435 {
         }
     }
 
-    public static int eraseOverlapIntervals(Interval[] intervals) {
+    public int eraseOverlapIntervals(Interval[] intervals) {
         if (intervals == null || intervals.length <= 1) {
             return 0;
         }
@@ -40,14 +40,5 @@ public class NoOverlappingIntervals_435 {
             }
         }
         return count;
-    }
-
-    public static void main(String[] args) {
-        Interval i1 = new Interval(3, 4);
-        Interval i2 = new Interval(0, 2);
-        Interval i3 = new Interval(1, 2);
-        Interval[] intervals = new Interval[]{i1, i2, i3};
-        int result = eraseOverlapIntervals(intervals);
-        System.out.println(result);
     }
 }

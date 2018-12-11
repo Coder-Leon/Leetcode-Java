@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Map;
 
 public class TopKElements_347 {
-    public static int[] findTopK(int[] nums, int k) {
+    public int[] findTopK(int[] nums, int k) {
         int[] result = new int[k];
         if (nums == null || nums.length < 1) {
             return result;
@@ -37,14 +37,5 @@ public class TopKElements_347 {
             result[i] = topK.get(i);
         }
         return result;
-    }
-
-    public static void main(String[] args) {
-        int[] nums = new int[]{1, 1, 1, 2, 2, 2, 3, 3, 3};
-        int k = 2;
-        int[] result = findTopK(nums, k);
-        for (int num : result) {
-            System.out.print(num + " ");
-        }
     }
 }

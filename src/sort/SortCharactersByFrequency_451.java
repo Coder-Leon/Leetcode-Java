@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Map;
 
 public class SortCharactersByFrequency_451 {
-    public static String sortString(String s) {
+    public String sortString(String s) {
         if (s == null || s.length() < 3) {
             return s;
         }
@@ -33,9 +33,5 @@ public class SortCharactersByFrequency_451 {
             }
         }
         return sb.toString();
-    }
-
-    public static void main(String[] args) {
-        System.out.println(sortString("treeae"));
     }
 }

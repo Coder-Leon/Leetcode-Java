@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Comparator;
 
 public class BurstBalloons_452 {
-    public static int findMinArrowShots(int[][] points) {
+    public int findMinArrowShots(int[][] points) {
         if (points == null || points.length < 1) {
             return 0;
         }
@@ -23,11 +23,5 @@ public class BurstBalloons_452 {
             }
         }
         return count;
-    }
-
-    public static void main(String[] args) {
-        int[][] points = new int[][]{{10, 16}, {2, 8}, {1, 6}, {7, 12}};
-        int result = findMinArrowShots(points);
-        System.out.println(result);
     }
 }
